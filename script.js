@@ -1,9 +1,9 @@
-//your JS code here. If required.
 document.addEventListener("DOMContentLoaded", () => {
   const output = document.getElementById("output");
 
-  // Add the initial Loading row
+  // Add the initial Loading row with an ID for Cypress to find
   const loadingRow = document.createElement("tr");
+  loadingRow.id = "loading";  // Added ID for Cypress to find it
   loadingRow.innerHTML = `<td colspan="2">Loading...</td>`;
   output.appendChild(loadingRow);
 
